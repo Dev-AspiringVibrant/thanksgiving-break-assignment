@@ -34,6 +34,9 @@ header ul a {
     font-size: large;
     font-weight: bold;
     padding: 16px;
+    border: solid 1px red;
+    border-radius: 10px;
+    padding-bottom: 14px;
 }
 
 header ul a:focus-within {
@@ -93,9 +96,43 @@ header ul a:focus-within {
 
 }
 
+/* Food */
+.food-pic {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
 /* Extra Style */
 h2 {
     padding: 20px;
+}
+
+.display-row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.display-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-to-right {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.text-to-left {
+    padding-right: 10px;
+    text-align: left;
 }
 
 /* Footer */
@@ -113,6 +150,7 @@ However, the footer below me make it works. ¯\_(ツ)_/¯*/
 
 footer ul {
     display: flex;
+    flex-direction: column;
     list-style: none;
 }
 
@@ -121,6 +159,16 @@ footer ul a {
     text-decoration: none;
     font-size: light;
     font-weight: bold;
+    padding: 16px;
+    border: solid 1px red;
+    padding-bottom: 14px;
+    border-radius: 10px;
+}
+
+footer ul a:focus-within {
+    animation-duration: 500ms;
+    background-color: red;
+    border-radius: 10px;
 }
 
 /* Links */
