@@ -123,6 +123,7 @@ h2 {
 .display-column {
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 .text-to-right {
