@@ -1,0 +1,133 @@
+/* Main Style */
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: block;
+    background: black;
+    color: white;
+    position: sticky;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header ul a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header ul a:focus-within {
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* Index */
+.index-header {
+    text-align: center;
+    transform: translateY(80px);
+}
+
+.clickables {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 150px;
+}
+
+.index-container:focus-within {
+    transition-duration: 500ms;
+    background-color: red;
+    width: 575px;
+}
+
+.clickables img {
+    width: 500px;
+    height: 300px;
+    filter: brightness(80%);
+}
+
+.clickables a:hover {
+    filter: brightness(50%);
+}
+
+.index-container {
+    background-color: black;
+    width: 550px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+.text {
+    user-select: none;
+    position: absolute;
+
+}
+
+/* Extra Style */
+h2 {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    display: block;
+    background: black;
+}
+
+/* For some reason, the footer above me won't render the background.
+However, the footer below me make it works. ¯\_(ツ)_/¯*/
+#footer {
+    background: black;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+    font-size: light;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    transition-duration: 500ms;
+}
+
+a:hover {
+    color: orange;
+}
