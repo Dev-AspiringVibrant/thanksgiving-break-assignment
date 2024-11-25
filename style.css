@@ -156,6 +156,8 @@ footer ul {
 }
 
 footer ul a {
+    display: flex;
+    width: fit-content;
     color: white;
     text-decoration: none;
     font-size: light;
