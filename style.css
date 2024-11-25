@@ -103,6 +103,14 @@ header ul a:focus-within {
     margin-top: 20px;
 }
 
+/* Wellness */
+.brain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
 /* Extra Style */
 h2 {
     padding: 20px;
